@@ -27,7 +27,7 @@ public class Author {
     @JoinColumn(name = "zipcode_id")
     private Zipcode zipcode;
 
-    @ManyToMany(mappedBy = "categories", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToMany(mappedBy = "authors", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "book_id")
     private List<Book> books = new ArrayList<>();
 
