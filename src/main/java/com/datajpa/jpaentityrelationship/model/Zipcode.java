@@ -18,6 +18,7 @@ public class Zipcode {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
+
     private String name;
 
     @OneToOne(cascade = CascadeType.ALL)
