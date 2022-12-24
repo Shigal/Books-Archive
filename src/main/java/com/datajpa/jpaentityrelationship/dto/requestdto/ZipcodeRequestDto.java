@@ -9,5 +9,5 @@ import lombok.Data;
 @Data
 public class ZipcodeRequestDto {
     private String name;
-    private long cityId;
+    private Long cityId;
 }
