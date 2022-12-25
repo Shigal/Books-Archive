@@ -28,7 +28,6 @@ public class Author {
     private Zipcode zipcode;
 
     @ManyToMany(mappedBy = "authors", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @JoinColumn(name = "book_id")
     private List<Book> books = new ArrayList<>();
 
     public Author(String name, Zipcode zipcode, List<Book> books) {
