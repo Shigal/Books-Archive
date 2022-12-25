@@ -12,13 +12,13 @@ import java.util.List;
 
 public interface BookService {
     public BookResponseDto addBook(BookRequestDto bookRequestDto);
-    public List<Book> getAllBooks();
+    public List<BookResponseDto> getBooks();
     public BookResponseDto getBookById(Long bookId);
     public Book getBook(Long bookId);
     public BookResponseDto deleteBook(Long bookId);
     public BookResponseDto editBook(Long bookId, BookRequestDto bookRequestDto);
     public BookResponseDto addAuthorToBook(Long bookId, Long authorId);
-    public BookResponseDto deleteAuthorFromBook(Long bookId);
+    public BookResponseDto deleteAuthorFromBook(Long bookId, Long authorId);
     public BookResponseDto addCategoryToBook(Long bookId, Long categoryId);
-    public BookResponseDto deleteCategoryFromBook(Long bookId);
+    public BookResponseDto deleteCategoryFromBook(Long bookId, Long categoryId);
 }
