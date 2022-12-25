@@ -14,7 +14,7 @@ import com.datajpa.jpaentityrelationship.model.Category;
 import java.util.ArrayList;
 import java.util.List;
 
-public class mapper {
+public class Mapper {
 
     public static BookResponseDto bookToBookResponseDto(Book book){
         BookResponseDto response = new BookResponseDto();
