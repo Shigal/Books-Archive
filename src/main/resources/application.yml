@@ -9,7 +9,7 @@ spring:
   datasource:
     url: jdbc:h2:mem:memDb;DB_CLOSE_DELAY=-1
     driverClassName: org.h2.Driver
-    username:
+    username: sa
     password:
 
   jpa:
