@@ -24,7 +24,6 @@ public class CityServiceImpl implements CityService {
         this.cityRepository = cityRepository;
     }
 
-    @Transactional
     @Override
     public City addCity(CityRequestDto cityRequestDto) {
         City city = new City();
@@ -45,7 +44,6 @@ public class CityServiceImpl implements CityService {
             new IllegalArgumentException("City with cityId: " + cityId + " couldn't be found."));
     }
 
-    @Transactional
     @Override
     public City deleteCity(Long cityId) {
         City city = getCity(cityId);

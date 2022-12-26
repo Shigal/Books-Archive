@@ -57,7 +57,7 @@ public class ZipcodeServiceImpl implements ZipcodeService {
                 new IllegalArgumentException("Zipcode with id: " + zipcodeId + " couldn't be found."));
     }
 
-    @Transactional
+
     @Override
     public Zipcode deleteZipcode(Long zipcodeId) {
         Zipcode zipcode = getZipcode(zipcodeId);
